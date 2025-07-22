@@ -1,0 +1,12 @@
+enum Role {
+  USER     // Standard user
+  ADMIN    // Administrator
+}
+
+model User {
+  id    String @id
+  email String @unique
+  name  String? // Display name
+  role  Role    @default(USER)
+  meta  Json?   // JSON metadata
+}

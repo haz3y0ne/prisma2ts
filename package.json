@@ -1,0 +1,58 @@
+{
+  "name": "prisma2ts",
+  "version": "1.0.0",
+  "description": "CLI tool that converts Prisma schema files into TypeScript interface/type declarations with inline JSDoc comments",
+  "main": "src/index.js",
+  "bin": {
+    "prisma2ts": "./bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "utils/",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node tests/index.js && node tests/cli.test.js",
+    "test:unit": "node tests/index.js",
+    "test:cli": "node tests/cli.test.js",
+    "start": "node bin/cli.js",
+    "demo": "node bin/cli.js --input tests/fixtures/sample.prisma --table",
+    "version:patch": "npm version patch",
+    "version:minor": "npm version minor",
+    "version:major": "npm version major",
+    "prepublishOnly": "npm test",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haz3y0ne/prisma2ts.git"
+  },
+  "homepage": "https://github.com/haz3y0ne/prisma2ts#readme",
+  "bugs": {
+    "url": "https://github.com/haz3y0ne/prisma2ts/issues"
+  },
+  "keywords": [
+    "prisma",
+    "typescript",
+    "cli",
+    "schema",
+    "generator",
+    "codegen",
+    "prisma-schema",
+    "typescript-generator"
+  ],
+  "author": "Chris Moran",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.3",
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

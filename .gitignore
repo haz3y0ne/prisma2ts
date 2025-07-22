@@ -1,0 +1,6 @@
+# prisma2ts
+
+node_modules/
+*.log
+types.ts
+.DS_Store
