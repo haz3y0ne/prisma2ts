@@ -1,5 +1,10 @@
 # prisma2ts
 
+[![npm version](https://img.shields.io/npm/v/prisma2ts.svg)](https://www.npmjs.com/package/prisma2ts)
+[![npm downloads](https://img.shields.io/npm/dw/prisma2ts.svg)](https://www.npmjs.com/package/prisma2ts)
+[![npm downloads](https://img.shields.io/npm/dt/prisma2ts.svg)](https://www.npmjs.com/package/prisma2ts)
+[![license](https://img.shields.io/npm/l/prisma2ts.svg)](https://github.com/haz3y0ne/prisma2ts/blob/master/LICENSE)
+
 A CLI tool that converts Prisma schema files into TypeScript interface/type declarations with inline JSDoc comments.
 
 ## Installation
