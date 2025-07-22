@@ -1,6 +1,6 @@
 {
   "name": "prisma2ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool that converts Prisma schema files into TypeScript interface/type declarations with inline JSDoc comments",
   "main": "src/index.js",
   "bin": {
